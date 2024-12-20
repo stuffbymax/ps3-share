@@ -3,46 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Sharing</title>
+    <title>PS3 File Sharing</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             color: #333;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding-top: 50px;
         }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* File list styles */
         .file-list {
             list-style-type: none;
             padding: 0;
         }
+
         .file-list li {
-            margin: 10px 0;
+            margin: 15px 0;
         }
-        a {
+
+        .file-list a {
             text-decoration: none;
-            background-color: #007bff;
+            background-color: #28a745;
             color: white;
-            padding: 10px;
+            padding: 12px 20px;
             border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
         }
-        a:hover {
-            background-color: #0056b3;
+
+        .file-list a:hover {
+            background-color: #218838;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to PS3 File Sharing</h1>
-    <p>Click the links below to download files:</p>
 
-    <ul class="file-list">
-        <!-- Replace with actual file links you want to share -->
-        <li><a href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/file1.zip" download>Download File 1</a></li>
-        <li><a href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/file2.zip" download>Download File 2</a></li>
-    </ul>
+    <header>
+        <h1>PS3 File Sharing</h1>
+        <p>Share your files with ease!</p>
+    </header>
+
+    <div class="container">
+        <h2>Available Files</h2>
+        <p>Click the links below to download files directly.</p>
+
+        <ul class="file-list">
+            <!-- Replace with actual file links -->
+            <li><a href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/file1.zip" download>Download File 1</a></li>
+            <li><a href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/file2.zip" download>Download File 2</a></li>
+            <li><a href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/file3.zip" download>Download File 3</a></li>
+        </ul>
+    </div>
 
     <footer>
         <p>Powered by GitHub Pages</p>
     </footer>
+
 </body>
 </html>
