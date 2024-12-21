@@ -3,99 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS3 File Sharing</title>
+    <title>PS3 Downloads</title>
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        /* Container for content */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* File list styles */
-        .file-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .file-list li {
-            margin: 15px 0;
-        }
-
-        .file-list a {
-            text-decoration: none;
-            background-color: #28a745;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        .file-list a:hover {
-            background-color: #218838;
-        }
-
-        /* Footer styles */
-        footer {
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
+        body { font-family: sans-serif; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; border: 1px solid #ccc; text-align: left; }
+        .info { font-size: smaller; color: #666; } /* Style for the info text */
+        .instructions { margin-top: 20px; font-size: 1rem; color: #333; }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>PS3 File Sharing</h1>
-        <p>Share your files with ease!</p>
-    </header>
-
     <div class="container">
-        <h2>Available Files</h2>
-        <p>Click the links below to download files directly.</p>
+        <h1>PS3 Downloads</h1>
 
-        <ul class="file-list">
-            <!-- Replace with actual file links -->
-            <li><a href="./BLES01807.pkg" download>BLES01807.pkg</a></li>
-            <br>
-            <li><a href="./EBOOT.BIN" download>EBOOT.BIN</a></li>
-            <br>
-            <li><a href="LTS_BLES.sprx" download>LTS_BLES.sprx</a></li>
-        </ul>
+        <div id="resource-list">
+            <h2>Available Files</h2>
+            <table id="resourceTable">
+                <thead>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Info</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BLES01807.pkg</td>
+                        <td class="info">RE:V PKG FOR GTA 5 BLES VERSION</td>
+                        <td><a href="./archive/pkg/BLES01807.pkg">Download</a></td> 
+                    </tr>
+                    <tr>
+                        <td>BLUS31156.pkg</td>
+                        <td class="info">RE:V PKG FOR BLUS GTA 5 VERSION</td>
+                        <td><a href="./archive/pkg/BLUS31156.pkg">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>NPEB01283.pkg</td>
+                        <td class="info">RE:V PKG FOR NPEB GTA 5 VERSION</td>
+                        <td><a href="./archive/pkg/NPEB01283.pkg">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>NPUB31154.pkg</td>
+                        <td class="info">RE:V PKG FOR NPUB GTA 5 VERSION</td>
+                        <td><a href="./archive/pkg/NPUB31154.pkg">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="instructions">
+                <h2>Manual Installation Info</h2>
+                <p>Transfer via FTP or USB flash disk. Place files inside <code>dev_hdd0/gta5-version-name</code>.</p>
+                <p><code>EBOOT.bin</code> needs to be inside your region's <code>dev_hdd0/game/BLxS(NPxB)xxxx/USRDIR/</code> folder.<br>
+                <code>LTS_BLXS.sprx</code> needs to be inside your <code>dev_hdd0/tmp</code> folder.</p>
+            </div>
+                   <div id="resource-list">
+            <h2>Available Files</h2>
+            <table id="resourceTable">
+                <thead>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Info</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BLES01807.pkg</td>
+                        <td class="info">RE:V manual FOR GTA 5 BLES VERSION</td>
+                        <td><a href="./archive/manual/REV BLES01807.zip">Download</a></td> 
+                    </tr>
+                    <tr>
+                        <td>BLUS31156.pkg</td>
+                        <td class="info">RE:V manual FOR BLUS GTA 5 VERSION</td>
+                        <td><a href="./archive/manual/REV BLUS31156.zip">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>NPEB01283.pkg</td>
+                        <td class="info">RE:V manual FOR NPEB GTA 5 VERSION</td>
+                        <td><a href="./archive/manual/REV NPEB01283.zip">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>NPUB31154.pkg</td>
+                        <td class="info">RE:V manual FOR NPUB GTA 5 VERSION</td>
+                        <td><a href="./archive/manual/REV NPUB31154.zip">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <footer>
-        <p>Powered by GitHub Pages</p>
-    </footer>
-
 </body>
 </html>
