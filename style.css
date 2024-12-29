@@ -1,0 +1,54 @@
+body { 
+    font-family: Arial, sans-serif; /* Use a web-safe font */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background for better visibility */
+    color: #fff; /* White text for better contrast */
+    text-align: center; /* Center-align all text */
+}
+
+.container {
+    width: 800px; /* Fixed width for PS3 screen */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #222; /* Dark background for content box */
+    border: 1px solid #444; /* Subtle border */
+}
+
+h1, h2 {
+    color: #00ff00; /* Bright green headings for PS3 retro style */
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; /* Space around the table */
+    color: #fff; /* White text for table content */
+}
+
+th, td { 
+    padding: 10px; 
+    border: 1px solid #555; /* Subtle table border */
+    text-align: left; 
+}
+
+.info { 
+    font-size: smaller; 
+    color: #aaa; /* Lighter gray for additional info */
+}
+
+.instructions {
+    margin-top: 20px; 
+    font-size: 14px; 
+    color: #ccc; /* Light gray for instructions */
+    text-align: left; /* Align instructions to the left */
+}
+
+a {
+    color: #00ff00; /* Bright green links for easy visibility */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
